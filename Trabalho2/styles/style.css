@@ -1,0 +1,121 @@
+
+*{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+
+}
+
+
+
+body {
+    background-color: rgb(64, 23, 75);
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    
+
+ 
+}
+
+
+
+header {
+    background-color: rgb(115, 39, 131);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+    
+    
+}
+
+
+header > ul {
+    list-style-type: none;
+    padding: 0;
+
+
+
+
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 35px;
+}
+
+
+
+header a:hover {
+
+    color: rgb(196, 75, 166);
+
+}
+
+
+main{
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px rgb(24, 7, 34);
+    transition: all ease-in-out 300ms;
+    margin-left: 50px;
+}
+
+main:hover {
+    box-shadow: 4px 4px rgb(207, 88, 178);
+    translate: -2px -2px;
+}
+  
+
+
+#titulo {
+    color: rgb(78, 9, 69);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#titulo:hover{
+    color: rgb(170, 24, 114);
+    translate: -2px -2px;
+}
+
+#formacao {
+    color:rgb(22, 13, 22);
+    font-size: 25px;
+}
+
+span{
+    color: rgb(207, 88, 178);
+
+}
+
+span:hover{
+    color: black;
+}
+
+
+.curriculocontato > p {
+    color: rgb(17, 17, 17);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#button {
+    color: rgb(78, 35, 80);
+}
+
+#button:hover{
+    color: rgb(207, 88, 178) ;
+}
+
+footer {
+    display: flex;
+    color: white;
+}

@@ -1,0 +1,443 @@
+body{
+    background-color: rgb(253, 253, 253);
+
+}
+
+
+header{
+    background-color: black;    
+    width: 101%;
+    height: 70px;
+    margin-top: -8px;
+    margin-left: -8px;
+    box-shadow: 0 6px 6px rgba(190, 28, 211, 0.6);
+    
+}
+
+@media screen and (min-width: 536px) {
+    
+
+  header ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0%;
+  }
+  
+  header ul li {
+    margin-top: 5px;
+  }
+  
+  header ul li a {
+    color: rgb(245, 245, 245); 
+  }
+
+
+#items{
+    display: flex;
+    color: white;
+    margin: 0 auto;
+  
+}
+}
+
+
+#items a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+   
+    
+}
+
+#items #login {
+    margin: 0 auto;
+    margin-left: 1320px;
+    max-width: 100px;
+}
+
+
+
+
+
+#items a:hover{
+    color: rgb(190, 20, 134);
+}
+
+
+
+
+.input{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    width: 15%;
+    flex-direction: column;
+    height: 20%;
+    border: 1;
+    border: 1px solid rgb(223, 27, 164);
+    margin-top: 12%;
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+
+
+}
+
+.input > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+
+}
+
+.input > h1:hover{
+    color: rgb(223, 27, 164);
+    cursor: pointer;
+}
+
+
+.input > p {
+    margin-bottom: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+input[type="email"],
+        input[type="password"] {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+input[type="email"]:focus, input[type="password"]:focus{
+    border-color: blueviolet;
+}
+
+
+
+.btn{
+    border: 1px solid transparent;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+.btn button{
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid rgb(223, 27, 164);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn button:hover{
+    background-color: rgb(129, 35, 134);
+    color: white;
+}
+
+
+.images{
+    display: flex;
+    margin-top: 2%;
+    width: 600px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    transition: all ease-in-out 300ms;
+    float: left;  
+    margin-left: 8px;
+
+}
+
+.images > p {
+
+    color: white;
+    margin-left: 5px;
+
+}
+.images:hover{
+    box-shadow: 4px 4px rgb(207, 88, 178);
+    translate: -2px -2px;
+}
+
+
+.images > img {
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+main{
+    justify-content: center;
+    display: column;
+    align-items: center;
+    width: 535px;
+    height: 200px;
+    
+}
+
+
+main h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main h1:hover{
+    color: blueviolet;
+}
+
+.elements-image{
+    
+    margin-left: 20%;
+    height: 1080px;
+    width: 1320px;
+}
+
+
+#vplogo{
+    margin-left: 475px;
+    margin-top: 0px;
+}
+
+.h1{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+    body {
+        width: 100vw;
+    }
+    header{
+        width: 1350px;
+        height: 90px;
+        margin-top: -3%;
+      }
+
+      header ul {
+        list-style: none;
+        margin-left: 0%;
+      }
+      
+      header ul li {
+        margin-top: 30px;
+      }
+      
+      header ul li a {
+        color: rgb(245, 245, 245); 
+      }
+   
+      #items #login{
+        margin-left: 820px;
+      }
+
+      .elements-image{
+        width: 100px;
+        margin-left: 21%;
+      }
+
+      .images{
+        display: flex;
+        margin-top: 10%;
+        width: 600px;
+        background-color: blueviolet;
+        border-radius: 20px;
+        transition: all ease-in-out 300ms;
+        float: left;
+        margin-left: 100%;
+    
+    }
+    
+    .images > p {
+    
+        color: rgb(255, 255, 255);
+        margin-left: 5px;
+    
+    }
+    .images:hover{
+        box-shadow: 4px 4px rgb(207, 88, 178);
+        translate: -2px -2px;
+    }
+    
+    
+    .images > img {
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+
+    .input{
+        width: 300px;
+        margin-top: 200px;
+        justify-content: center;
+        margin-left: 250px;
+        flex-direction: center;
+        max-height: 20%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .input > h1{
+        margin-left: 5%;
+    
+    }
+    
+}
+
+
+
+
+@media  screen and (max-width: 1000px) {
+
+
+    body {
+        width: 100vw;
+    }
+    header{
+        width: 1000px;
+        height: 90px;
+        margin-top: -3%;
+      }
+
+      header ul {
+        list-style: none;
+        margin-left: 0%;
+      }
+      
+      header ul li {
+        margin-top: 26px;
+      }
+      
+      header ul li a {
+        color: rgb(245, 245, 245); 
+      }
+   
+      #items #login{
+        margin-left: 1120%;
+      }
+
+      .elements-image{
+        width: 100px;
+      }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 535px){
+
+    
+    body {
+        
+        width: 100vw;
+      }
+    
+
+    .main{
+        width: 100vw;
+    }
+      /* TEM QUE MEXER AQUI > HEADER > UL*/
+      header{
+        width: 101vw;
+        height: 190px;
+        margin-top: -5%;
+      }
+
+      header ul {
+        list-style: none;
+        margin-left: 33%;
+      }
+      
+      header ul a {
+        color: black;
+      }
+      header ul li {
+        margin-top: 7px;
+      }
+      
+      header ul li a {
+        color: rgb(241, 241, 241);
+      }
+
+      #items li:a(1),
+      #items li:nth-child(6) {
+          margin-top: 20px; /* Ajuste esse valor conforme necessário */
+      }
+
+      #items li a {
+        justify-content: center;
+        margin-bottom: 20px;
+        flex-direction: center;
+      }
+
+    .images{
+        width: 80vw;
+        margin-left: 10%;
+        height: 14%;
+    }
+
+    .images > img{
+        width: 40%;
+        height: 100%;
+    }
+
+    .images > p{
+        font-size: 8px;
+        margin-top: 10%;
+    }
+
+    #items #login {
+        margin: 0 auto;
+        margin-left: 1%;
+        max-width: 100px;
+
+    }
+
+    .elements-image{
+        width: 80vw;
+        margin-left: 0%;
+    }
+
+    .input{
+        width: 80%;
+        margin-top: 50%;
+        justify-content: center;
+        margin-left: 12%;
+        flex-direction: center;
+        max-height: 20%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .input > h1{
+        margin-left: 5%;
+    
+    }
+
+    .h1 {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .bodylogin {
+        max-height: 50%;
+    }
+
+    
+} 
