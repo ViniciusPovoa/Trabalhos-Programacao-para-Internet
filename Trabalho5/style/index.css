@@ -1,0 +1,29 @@
+.text{
+    justify-content: center;
+    display: flex;
+ 
+    background-color: rgb(7, 11, 59);
+    color: white;
+}
+
+
+
+
+    
+.container2{
+    border: 1px solid black;
+    margin-top: 15%;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 35%;
+
+}
+
+.login{
+   display: flex;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    margin-top: -20px;
+
+}

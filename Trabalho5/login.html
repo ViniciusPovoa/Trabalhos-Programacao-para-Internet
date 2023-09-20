@@ -2,91 +2,68 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="index.css">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/index.css">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-  <script>
-    function funcao(event) {
-      event.preventDefault();
-      const valorEmail = document.forms.cadastro["email"].value;
-      const valorSenha = document.forms.cadastro["senha"].value;
-
-      const alert = document.getElementById("alerta");
-      if (valorEmail === "" || valorSenha === "") {
-
-        const nodeH2 = document.querySelectorAll("input")
-        for (let node of nodeH2)
-          node.style.borderColor = "red";
-        console.log("deu errado faltou email ou senha");
-        alert.style.display = "block";
-        return;
-
-      }
-      console.log(valorEmail);
-      console.log(valorSenha);
-
-      document.addEventListener("DOMContentLoaded", function () {
-
-        var forms = document.getElementById("cadastro");
-        forms.addEventListener("submit", funcao);
-      });
-
-    }
-
-  </script>
+    <script src="script/index.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <nav class="nav nav-pills nav-fill">
-      <a class="nav-link " aria-current="page" href="index.html">Home</a>
-      <a class="nav-link active" href="login.html">Login</a>
-    </nav>
-  </header>
+    <header>
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" href="login.html">Login</a>
+        </nav>
+    </header>
 
-  <main>
+    <main>
+<div class="centralizar">
+        <div class="container p-2">
+            <div class="container2 p-md-5">
+                <form id="cadastro">
+                    <div class="col pb-md-1">
+                        <div>
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" id="loginemail" placeholder="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Senha</label>
+                            <input type="password" class="form-control" name="senha" id="loginsenha"
+                                placeholder="senha">
+                        </div>
 
-    <div class="container p-md-5">
-      <form name="cadastro">
-        <div class="col pb-md-1">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="loginemail" placeholder="email">
+                        <input type="submit" class="btn btn-primary" value="Logar" onclick="funcao()">
+                </form>
+            </div>
+          
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Senha</label>
-          <input type="password" class="form-control" name="senha" id="loginsenha" placeholder="senha">
+      </div>
+        <br><br>
+        <div class="alert alert-danger" role="alert" style="display:none;" id="alerta">
+            Preencha todos os campos!
         </div>
+    </main>
 
-        <button type="submit" class="btn btn-primary" value="Logar" onclick="funcao()">Logar</button>
-      </form>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-    <div class="alert alert-danger" role="alert" style="display:none;" id="alerta">
-      Preencha todos os campos!
-    </div>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 </body>
 
 <footer class="fixed-bottom p-2">
-  <div class="text">
-    Trabalho 5 de Programação para Internet @ UFU – Vinícius Horácio Marques Póvoa
-  </div>
+    <div class="text">  Trabalho 5 de Programação para Internet @ UFU – Vinícius Horácio Marques Póvoa
+    </div>
 </footer>
 
 </html>
